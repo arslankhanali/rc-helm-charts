@@ -1,0 +1,29 @@
+# Provide a name to be used for the service account and role/rolebindings
+name: rbac
+namespace: default
+
+roles:
+  - createRole: true
+# When putting in values ChatGPT stuff. "write an rbac for openshift that can patch storageclasses"
+    apiGroups:
+      - ""
+# Is this a clusterRole (default true)
+    scope:
+      cluster: true
+# Resources are defined plural - pods, nodes, deployments
+    resources:
+      - '*'
+# Available verbs are ["get", "list", "watch", "patch", "create", "update", "delete", "'*'"
+# The following example allows read access for all ('*') resources
+    verbs: 
+      - "get"
+      - "list"
+      - "watch"
+
+roleBindings:
+  - createBinding: true
+    scope:
+      cluster: true
+    subjects:
+      kind: ServiceAccount
+      apiGroup: ""
