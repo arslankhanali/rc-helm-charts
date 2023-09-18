@@ -11,14 +11,3 @@ entries:
     urls:
     - https://arslankhanali.github.io/my-helm-charts/.cr-release-packages/rbac-0.0.1.tgz
     version: 0.0.1
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-09-18T17:13:29.233559+10:00"
-    description: A Helm chart that provisions service accounts, roles and rolebindings
-    digest: 154d67ef014b284940f5c07ca5efd88477c2a7f75c7ed179f1ee7058bc412d17
-    name: rbac
-    type: application
-    urls:
-    - https://arslankhanali.github.io/my-helm-charts/.deploy/rbac-0.0.1.tgz
-    version: 0.0.1
-generated: "2023-09-18T17:13:29.232757+10:00"
