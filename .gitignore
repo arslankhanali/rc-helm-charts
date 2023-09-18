@@ -1,4 +1,3 @@
 .deploy
 .DS_Store
 .gitignore
-.cr-release-packages
