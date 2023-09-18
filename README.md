@@ -15,6 +15,9 @@ Install helm on your machine using the [official docs](https://helm.sh/docs/intr
 helm repo add arslankhanali https://arslankhanali.github.io/my-helm-charts/
 ```
 ```shell
+helm repo update
+```
+```shell
 helm search repo arslankhanali
 ```
 ```shell
