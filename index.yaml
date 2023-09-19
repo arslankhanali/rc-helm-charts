@@ -3,7 +3,17 @@ entries:
   rbac:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-19T15:54:12.761208+10:00"
+    created: "2023-09-19T16:16:42.997213+10:00"
+    description: A Helm chart that provisions service accounts, roles and rolebindings
+    digest: f045f681473ab66df65a9c74f0a834913e127735992f09df077ee6097096fb61
+    name: rbac
+    type: application
+    urls:
+    - https://github.com/arslankhanali/my-helm-charts/releases/download/rbac-0.0.2/rbac-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-19T16:16:42.419302+10:00"
     description: A Helm chart that provisions service accounts, roles and rolebindings
     digest: 693d01594fa02832bbd99c4376fb5e4d475e1cc278a9b2ed7d05e1ae69380f3f
     name: rbac
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/arslankhanali/my-helm-charts/releases/download/rbac-0.0.1/rbac-0.0.1.tgz
     version: 0.0.1
-generated: "2023-09-19T15:54:12.761215+10:00"
+generated: "2023-09-19T16:16:42.997238+10:00"
