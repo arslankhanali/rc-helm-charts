@@ -26,8 +26,8 @@ token: <>
 In main branch
 ``` sh
 cr package charts/rbac
-cr upload --packages-with-index --config $HOME/.cr.yaml --push --skip-existing
-cr index --packages-with-index  --config $HOME/.cr.yaml --push
+cr upload  --config $HOME/.cr.yaml --push --skip-existing
+cr index   --config $HOME/.cr.yaml --push
 
 # Upload new release in .cr-release-packages/
 git add .
