@@ -1,7 +1,7 @@
     
     ### Usage
     ####
-    helm install  https://arslankhanali.github.io/my-helm-charts/s2i --set appName=infapp
+    helm install s2iChart https://arslankhanali.github.io/my-helm-charts/s2i --set appName=infapp
 
     ####
     infapp:
