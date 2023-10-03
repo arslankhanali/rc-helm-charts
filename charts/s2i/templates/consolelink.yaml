@@ -1,5 +1,4 @@
-{{- range $key, $value := .Values.consoleLink }}
-{{- if $value.createLink | default true }}
+{{- if .Values.consoleLink.createLink | default true }}
 apiVersion: console.openshift.io/v1
 kind: ConsoleLink
 metadata:
@@ -7,13 +6,12 @@ metadata:
   namespace: {{ $.Values.namespace }}
 spec:
   applicationMenu:
-    section: {{ $value.section }}
-    imageURL: {{ $value.base64image }}
+    section: {{ .Values.consoleLink.section }}
+    imageURL: {{ .Values.consoleLink.base64image }}
   href: 'https://{{ $.Values.appName }}-route-{{ $.Values.namespace }}.{{ coalesce $.Values.global.localClusterDomain $.Values.global.hubClusterDomain }}'
-  location: {{ $value.location }}
-  text: {{ $value.text }}
+  location: {{ .Values.consoleLink.location }}
+  text: {{ .Values.consoleLink.text }}
 
-{{- end }}
 {{- end }}
 
 #http://credit-fraud-detection-demo-route-credit-fraud-model.apps.cluster-7dfg8.7dfg8.sandbox258.opentlc.com/
