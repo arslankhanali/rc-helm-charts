@@ -21,9 +21,13 @@ spec:
       - name: {{ .Values.appName }}
         image: image-registry.openshift-image-registry.svc:5000/{{ .Values.namespace }}/{{ .Values.appName }}-is-app:latest
         # image: {{ .Values.appName }}:latest
+        {{- if .Values.environment.enable | default true }}
         env:
-        - name: INFERENCE_ENDPOINT
-          value: {{ .Values.inferenceEndpoint }}
+        {{- range $e := .Values.environment.env }}
+        - name: {{ $e.name }}
+          value: {{ $e.value }}
+        {{- end }}
+        {{- end }}
         ports:
         - containerPort: {{ .Values.port }}
           name: http
