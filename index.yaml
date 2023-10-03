@@ -64,14 +64,25 @@ entries:
     version: 0.0.1
   s2i:
   - apiVersion: v2
-    created: "2023-10-03T13:30:46.254859+11:00"
+    created: "2023-10-03T15:12:02.986984+11:00"
     description: Creates an image stream from a Docker file in github and run that
       app with route exposed. Also creates a shortcut link in console 9box.
-    digest: 217b25d149d3b9cdca21f85f80655b99607b6e5fae3761455792426b86c86357
+    digest: aad4e595e67d26b8ea3ad79c4e9b0e88a8ce1fbb78c38d228a17a54a31ce7764
+    keywords:
+    - pattern
+    name: s2i
+    urls:
+    - https://github.com/arslankhanali/my-helm-charts/releases/download/s2i-0.0.2/s2i-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    created: "2023-10-03T12:08:31.079525+11:00"
+    description: Creates an image stream from a Docker file in github and run that
+      app with route exposed. Also creates a shortcut link in console 9box.
+    digest: c1e37e4382b2bddefe337a18823b90fcaa63b03d7c3a35aa43f78ba490b51c56
     keywords:
     - pattern
     name: s2i
     urls:
     - https://github.com/arslankhanali/my-helm-charts/releases/download/s2i-0.0.1/s2i-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-03T13:30:46.254892+11:00"
+generated: "2023-10-03T15:12:02.987015+11:00"
