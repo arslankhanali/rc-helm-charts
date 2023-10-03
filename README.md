@@ -38,11 +38,11 @@ git push
 In gh-pages branch: index.yaml file will be automatically updated and new tar release will be uploaded.
 
 # Home
-[Site](https://arslankhanali.github.io/my-helm-charts/)
 
 # Helm Chart Repository
 
 [rbac](https://github.com/arslankhanali/my-helm-charts/tree/main/charts/rbac)
+[s2i](https://github.com/arslankhanali/my-helm-charts/tree/main/charts/s2i)
 
 ## Usage
 
