@@ -8,6 +8,7 @@ kind: RoleBinding
 {{- end }}
 metadata:
   name: {{ $.Values.name }}
+  namespace: {{ $.Values.namespace }}
 subjects:
 - kind: {{ $value.subjects.kind | default "ServiceAccount" }}
   name: {{ $.Values.name }}-sa

@@ -1,0 +1,9 @@
+
+appName: credit-fraud-detection-demo
+namespace: credit-fraud-model
+uri: https://github.com/arslankhanali/credit-fraud-detection-demo
+contextDir: application
+originalimage: python:3.10.4
+inferenceEndpoint: http://modelmesh-serving.credit-fraud-model:8008/v2/models/credit-card-fraud/infer
+port: 8080
+protocol: TCP
