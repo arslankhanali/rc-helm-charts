@@ -22,7 +22,7 @@ helm repo update
 helm search repo arslankhanali
 ```
 ```shell
-helm install rbac arslankhanali/rbac
+helm install rbac arslankhanali/rbac --set <value-To-Override-In-Values.yaml>=<your-Value>
 ```
 
 ```shell
@@ -49,5 +49,5 @@ infapp:
 
 ### In command line
 ``` sh 
-helm install s2iChart https://arslankhanali.github.io/my-helm-charts/s2i --set appName=infapp
+helm install s2i https://arslankhanali.github.io/my-helm-charts/s2i --set appName=infapp
 ```
