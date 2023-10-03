@@ -1,6 +1,6 @@
 apiVersion: v2
-description: An empty Helm chart
+description: Creates an image stream from a Docker file in github and run that app with route exposed. Also creates a shortcut link in console 9box.
 keywords:
 - pattern
-name: blank
+name: s2i
 version: 0.0.1
