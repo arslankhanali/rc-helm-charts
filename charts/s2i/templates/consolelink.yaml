@@ -15,6 +15,3 @@ spec:
 {{- end }}
 
 #http://credit-fraud-detection-demo-route-credit-fraud-model.apps.cluster-7dfg8.7dfg8.sandbox258.opentlc.com/
-#http://credit-fraud-detection-demo-route-credit-fraud-model.apps.cluster-7dfg8.7dfg8.sandbox258.opentlc.com/
-
-#http://credit-fraud-detection-demo-route-credit-fraud-model.apps.cluster-7dfg8.7dfg8.sandbox258.opentlc.com/
