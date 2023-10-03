@@ -3,8 +3,8 @@
 
 # Helm Chart Repository
 
-[rbac](https://github.com/arslankhanali/my-helm-charts/tree/main/charts/rbac)
-[s2i](https://github.com/arslankhanali/my-helm-charts/tree/main/charts/s2i)
+- [rbac](https://github.com/arslankhanali/my-helm-charts/tree/main/charts/rbac)
+- [s2i](https://github.com/arslankhanali/my-helm-charts/tree/main/charts/s2i)
 
 
 
