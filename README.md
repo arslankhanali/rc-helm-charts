@@ -31,7 +31,7 @@ git add .
 git commit -am "New Release"
 git push
 
-cr package charts/rbac
+cr package charts/s2i
 cr upload  --config $HOME/.cr.yaml --push --skip-existing
 cr index   --config $HOME/.cr.yaml --push
 

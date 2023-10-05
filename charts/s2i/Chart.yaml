@@ -3,4 +3,4 @@ description: Creates an image stream from a Docker file in github and run that a
 keywords:
 - pattern
 name: s2i
-version: 0.0.3
+version: 0.0.4

@@ -6,7 +6,13 @@
 helm repo add rc-helm-charts https://arslankhanali.github.io/rc-helm-charts/
 helm repo update
 helm search repo rc-helm-charts
-helm install s2i rc-helm-charts/s2i --set appName=infapp
+helm install s2i rc-helm-charts/s2i --set appName=infapp \
+                                    --set   namespace=infapp \
+                                    --set   uri=https://github.com/arslankhanali/credit-fraud-detection-demo \
+                                    --set   contextDir=application \
+                                    --set   originalimage=python:3.10.4 \
+                                    --set   port=8080 \
+                                    --set   protocol=TCP \
 ```
 
 
@@ -18,7 +24,7 @@ helm install s2i rc-helm-charts/s2i --set appName=infapp
       project: infapp
       repoURL: https://arslankhanali.github.io/rc-helm-charts/
       chart: s2i
-      targetRevision: 0.0.2
+      targetRevision: 0.0.3
       overrides:
       #Basic
       - name: appName
