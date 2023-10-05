@@ -1,4 +1,7 @@
 
+global:
+  localClusterDomain: cluster-wbc9w.wbc9w.sandbox333.opentlc.com
+
 appName: credit-fraud-detection-demo
 namespace: credit-fraud-model
 uri: https://github.com/arslankhanali/credit-fraud-detection-demo
@@ -8,14 +11,14 @@ port: 8080
 protocol: TCP
 
 environment:
-  enable: true
+  enable: false
   env:
     - name: INFERENCE_ENDPOINT
       value: http://modelmesh-serving.credit-fraud-model:8008/v2/models/credit-card-fraud/infer
 
 
 consoleLink:
-  createLink: true
+  createLink: false
   section: 'Gradio App'
   text: 'Inferencing App'
   location: ApplicationMenu

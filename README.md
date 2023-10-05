@@ -49,16 +49,16 @@ In gh-pages branch: index.yaml file will be automatically updated and new tar re
 Install helm on your machine using the [official docs](https://helm.sh/docs/intro/install/)
 
 ```shell
-helm repo add arslankhanali https://arslankhanali.github.io/rc-helm-charts/
+helm repo add rc-helm-charts https://arslankhanali.github.io/rc-helm-charts/
 ```
 ```shell
 helm repo update
 ```
 ```shell
-helm search repo arslankhanali
+helm search repo rc-helm-charts
 ```
 ```shell
-helm install rbac arslankhanali/rbac
+helm install rbac rc-helm-charts/rbac
 ```
 
 ```shell

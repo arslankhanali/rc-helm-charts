@@ -1,7 +1,14 @@
     
 ### Usage
 ####
-`helm install s2iChart https://arslankhanali.github.io/rc-helm-charts/s2i --set appName=infapp`
+
+```shell
+helm repo add rc-helm-charts https://arslankhanali.github.io/rc-helm-charts/
+helm repo update
+helm search repo rc-helm-charts
+helm install s2i rc-helm-charts/s2i --set appName=infapp
+```
+
 
 ####
 ``` yml
