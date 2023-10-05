@@ -64,6 +64,17 @@ entries:
     version: 0.0.1
   s2i:
   - apiVersion: v2
+    created: "2023-10-05T15:58:16.211058+11:00"
+    description: Creates an image stream from a Docker file in github and run that
+      app with route exposed. Also creates a shortcut link in console 9box.
+    digest: 570bf70d34a1f9016b5df3744396d5f1615ef02777fadbd5e83836d92028cf4f
+    keywords:
+    - pattern
+    name: s2i
+    urls:
+    - https://github.com/arslankhanali/rc-helm-charts/releases/download/s2i-0.0.4/s2i-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
     created: "2023-10-05T15:35:44.829705+11:00"
     description: Creates an image stream from a Docker file in github and run that
       app with route exposed. Also creates a shortcut link in console 9box.
@@ -96,4 +107,4 @@ entries:
     urls:
     - https://github.com/arslankhanali/my-helm-charts/releases/download/s2i-0.0.1/s2i-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-05T15:35:44.829748+11:00"
+generated: "2023-10-05T15:58:16.21111+11:00"
