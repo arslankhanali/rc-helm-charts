@@ -1,10 +1,10 @@
 # Home
-[You are here](https://arslankhanali.github.io/my-helm-charts/)
+[You are here](https://arslankhanali.github.io/rc-helm-charts/)
 
 # Helm Chart Repository
 
-- [rbac](https://github.com/arslankhanali/my-helm-charts/tree/main/charts/rbac)
-- [s2i](https://github.com/arslankhanali/my-helm-charts/tree/main/charts/s2i)
+- [rbac](https://github.com/arslankhanali/rc-helm-charts/tree/main/charts/rbac)
+- [s2i](https://github.com/arslankhanali/rc-helm-charts/tree/main/charts/s2i)
 
 
 
@@ -13,7 +13,7 @@
 Install helm on your machine using the [official docs](https://helm.sh/docs/intro/install/)
 
 ```shell
-helm repo add arslankhanali https://arslankhanali.github.io/my-helm-charts/
+helm repo add arslankhanali https://arslankhanali.github.io/rc-helm-charts/
 ```
 ```shell
 helm repo update
@@ -35,7 +35,7 @@ infapp:
   name: infapp
   namespace: infapp
   project: infapp
-  repoURL: https://arslankhanali.github.io/my-helm-charts/
+  repoURL: https://arslankhanali.github.io/rc-helm-charts/
   chart: s2i
   targetRevision: 0.0.2
   overrides:
