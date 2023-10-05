@@ -18,22 +18,24 @@ cr package charts/{rbac,other}
 #### cat $HOME/.cr.yaml
 ``` sh
 owner: arslankhanali
-git-repo: my-helm-charts
+git-repo: rc-helm-charts
 index-path: .
 token: <>
 ```
 #### For new charts and release
 In main branch
 ``` sh
+# Upload new release in .cr-release-packages/
 cd Codes/rc-helm-charts
+git add .
+git commit -am "New Release"
+git push
+
 cr package charts/rbac
 cr upload  --config $HOME/.cr.yaml --push --skip-existing
 cr index   --config $HOME/.cr.yaml --push
 
-# Upload new release in .cr-release-packages/
-git add .
-git commit -am "New Release"
-git push
+
 ```
 In gh-pages branch: index.yaml file will be automatically updated and new tar release will be uploaded.
 
