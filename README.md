@@ -25,7 +25,7 @@ token: <>
 #### For new charts and release
 In main branch
 ``` sh
-cd Codes/my-helm-charts
+cd Codes/rc-helm-charts
 cr package charts/rbac
 cr upload  --config $HOME/.cr.yaml --push --skip-existing
 cr index   --config $HOME/.cr.yaml --push

@@ -1,4 +1,4 @@
-{{- if .Values.consoleLink.createLink | default true }}
+{{- if .Values.consoleLink.enable | default true }}
 apiVersion: console.openshift.io/v1
 kind: ConsoleLink
 metadata:
