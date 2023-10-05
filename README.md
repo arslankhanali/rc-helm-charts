@@ -14,22 +14,31 @@ Install helm on your machine using the [official docs](https://helm.sh/docs/intr
 
 ```shell
 helm repo add rc-helm-charts https://arslankhanali.github.io/rc-helm-charts/
-```
-```shell
 helm repo update
-```
-```shell
 helm search repo rc-helm-charts
-```
-```shell
-helm install rbac rc-helm-charts/rbac --set <value-To-Override-In-Values.yaml>=<your-Value>
+
+helm install rbac-1 rc-helm-charts/rbac
+
+helm list 
+
+helm uninstall rbac-1
 ```
 
-```shell
-helm uninstall rbac
+## s2i chart example
+#### 1 s2i example : cmd line
+``` sh
+helm repo add rc-helm-charts https://arslankhanali.github.io/rc-helm-charts/
+helm repo update
+helm install s2i-guise rc-helm-charts/s2i --set   appName=infapp3 \
+                                    --set   namespace=credit-fraud-model \
+                                    --set   uri=https://github.com/arslankhanali/GuiseAI-Openshift \
+                                    --set   contextDir=. \
+                                    --set   originalimage=docker.io/openvino/ubuntu20_runtime \
+                                    --set   port=30000 \
+                                    --set   protocol=TCP
 ```
 
-### In validated pattern
+#### 2 s2i example : validated pattern
 ```yml
 infapp:
   name: infapp
@@ -55,9 +64,4 @@ infapp:
     value: 'env-variable-shouldnot-have-a-space'
   - name: environment.env[1].value
     value: testing adding another env
-```
-
-### In command line
-``` sh 
-helm install s2i https://arslankhanali.github.io/my-helm-charts/s2i --set appName=infapp
 ```
