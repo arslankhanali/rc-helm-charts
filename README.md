@@ -25,7 +25,7 @@ helm uninstall rbac-1
 ```
 
 ## s2i chart example
-#### 1 s2i example : cmd line
+#### 1. s2i example : cmd line
 ``` sh
 helm repo add rc-helm-charts https://arslankhanali.github.io/rc-helm-charts/
 helm repo update
@@ -38,7 +38,7 @@ helm install s2i-guise rc-helm-charts/s2i --set   appName=infapp3 \
                                     --set   protocol=TCP
 ```
 
-#### 2 s2i example : validated pattern
+#### 2. s2i example : validated pattern
 ```yml
 infapp:
   name: infapp
