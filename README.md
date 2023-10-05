@@ -52,17 +52,12 @@ Install helm on your machine using the [official docs](https://helm.sh/docs/intr
 
 ```shell
 helm repo add rc-helm-charts https://arslankhanali.github.io/rc-helm-charts/
-```
-```shell
 helm repo update
-```
-```shell
 helm search repo rc-helm-charts
-```
-```shell
-helm install rbac rc-helm-charts/rbac
-```
 
-```shell
-helm uninstall rbac
+helm install rbac-1 rc-helm-charts/rbac
+
+helm list 
+
+helm uninstall rbac-1
 ```
