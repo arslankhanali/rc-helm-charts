@@ -1,7 +1,7 @@
     
 ### Usage
 ####
-`helm install s2iChart https://arslankhanali.github.io/my-helm-charts/s2i --set appName=infapp`
+`helm install s2iChart https://arslankhanali.github.io/rc-helm-charts/s2i --set appName=infapp`
 
 ####
 ``` yml
@@ -9,7 +9,7 @@
       name: infapp
       namespace: infapp
       project: infapp
-      repoURL: https://arslankhanali.github.io/my-helm-charts/
+      repoURL: https://arslankhanali.github.io/rc-helm-charts/
       chart: s2i
       targetRevision: 0.0.2
       overrides:

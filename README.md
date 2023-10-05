@@ -41,15 +41,15 @@ In gh-pages branch: index.yaml file will be automatically updated and new tar re
 
 # Helm Chart Repository
 
-[rbac](https://github.com/arslankhanali/my-helm-charts/tree/main/charts/rbac)
-[s2i](https://github.com/arslankhanali/my-helm-charts/tree/main/charts/s2i)
+[rbac](https://github.com/arslankhanali/rc-helm-charts/tree/main/charts/rbac)
+[s2i](https://github.com/arslankhanali/rc-helm-charts/tree/main/charts/s2i)
 
 ## Usage
 
 Install helm on your machine using the [official docs](https://helm.sh/docs/intro/install/)
 
 ```shell
-helm repo add arslankhanali https://arslankhanali.github.io/my-helm-charts/
+helm repo add arslankhanali https://arslankhanali.github.io/rc-helm-charts/
 ```
 ```shell
 helm repo update

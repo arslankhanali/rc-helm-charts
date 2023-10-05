@@ -5,7 +5,7 @@
 dependencies:
 - name: rbac
   version: 0.0.5
-  #repository: "https://arslankhanali.github.io/my-helm-charts"
+  #repository: "https://arslankhanali.github.io/rc-helm-charts"
   repository: "https://day0hero.github.io/helm-charts"
   #repository: "https://charts.validatedpatterns.io/"
 ```
