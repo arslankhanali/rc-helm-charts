@@ -8,7 +8,7 @@ spec:
   applicationMenu:
     section: {{ .Values.consoleLink.section }}
     imageURL: {{ .Values.consoleLink.base64image }}
-  href: 'https://{{ $.Values.appName }}-route-{{ $.Values.namespace }}.{{ coalesce $.Values.global.localClusterDomain $.Values.global.hubClusterDomain }}'
+  href: 'https://{{ $.Values.appName }}-route-{{ $.Values.namespace }}.{{ coalesce $.Values.consoleLink.localClusterDomain $.Values.consoleLink.hubClusterDomain }}'
   location: {{ .Values.consoleLink.location }}
   text: {{ .Values.consoleLink.text }}
 
