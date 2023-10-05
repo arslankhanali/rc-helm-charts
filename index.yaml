@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  blank:
+  - apiVersion: v2
+    created: "2023-10-05T16:14:49.678487+11:00"
+    description: An empty Helm chart
+    digest: 526eac5266cce78f81b84a4507b4eb8fa1e884997cc816d373524a4e46eabb56
+    keywords:
+    - pattern
+    name: blank
+    urls:
+    - https://github.com/arslankhanali/rc-helm-charts/releases/download/blank-0.0.1/blank-0.0.1.tgz
+    version: 0.0.1
   rbac:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -96,4 +107,4 @@ entries:
     urls:
     - https://github.com/arslankhanali/my-helm-charts/releases/download/s2i-0.0.1/s2i-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-05T15:58:16.21111+11:00"
+generated: "2023-10-05T16:14:53.141153+11:00"
