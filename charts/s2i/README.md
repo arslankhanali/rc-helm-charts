@@ -6,13 +6,13 @@
 helm repo add rc-helm-charts https://arslankhanali.github.io/rc-helm-charts/
 helm repo update
 helm search repo rc-helm-charts
-helm install s2i rc-helm-charts/s2i --set appName=infapp \
-                                    --set   namespace=infapp \
-                                    --set   uri=https://github.com/arslankhanali/credit-fraud-detection-demo \
-                                    --set   contextDir=application \
-                                    --set   originalimage=python:3.10.4 \
-                                    --set   port=8080 \
-                                    --set   protocol=TCP \
+helm install s2i-guise rc-helm-charts/s2i --set   appName=infapp3 \
+                                    --set   namespace=credit-fraud-model \
+                                    --set   uri=https://github.com/arslankhanali/GuiseAI-Openshift \
+                                    --set   contextDir=. \
+                                    --set   originalimage=docker.io/openvino/ubuntu20_runtime \
+                                    --set   port=30000 \
+                                    --set   protocol=TCP 
 ```
 
 
