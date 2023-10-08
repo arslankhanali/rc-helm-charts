@@ -1,0 +1,98 @@
+{{ if eq (.Values.rhacs.central.enabled | toString) "true" }}
+apiVersion: platform.stackrox.io/v1alpha1
+kind: Central
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: {{ .Values.rhacs.central.syncwave | quote }}
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+  name: central
+  namespace: {{ .Values.rhacs.namespace.name | quote }}
+  labels:
+    {{- include "rhacs.labels" $ | nindent 4 }}
+spec:
+  central:
+    exposure:
+      loadBalancer:
+        enabled: false
+        port: 443
+      nodePort:
+        enabled: false
+      route:
+        {{- if .Values.rhacs.central.hostname }}
+        host: {{ .Values.rhacs.central.hostname }}
+        {{- end }}
+        enabled: true
+    {{- if .Values.rhacs.central.defaultssl }}
+    defaultTLSSecret:
+      name: {{ .Values.rhacs.central.defaultssl }}
+    {{- end }}
+    persistence:
+      persistentVolumeClaim:
+        claimName: {{ .Values.rhacs.central.pvc | quote }}
+    {{- if .Values.rhacs.central.db }}
+    {{- with .Values.rhacs.central.db }}
+    db:
+      isEnabled: Default
+      {{- if .resources }}
+      resources:
+        {{- if .resources.requests }}
+        requests:
+          cpu: {{ .resources.requests.cpu }}
+          memory: {{ .resources.requests.memory }}
+        {{- end }}
+        {{- if .resources.limits }}
+        limits:
+          cpu: {{ .resources.limits.cpu  }}
+          memory: {{ .resources.limits.memory }}
+        {{- end }}
+      {{- end }}
+      {{- if .tolerations }}
+      {{- range $key, $value := .tolerations }}
+      tolerations:
+        - effect: {{ $value.effect }}
+          key: {{ $value.key }}
+          operator: {{ $value.operator }}
+          value: {{ $value.value }}
+      {{- end }}
+      {{- end }}
+    {{- end }}
+    {{- end }}
+    {{- if .Values.rhacs.central.tolerations }}
+    {{- range $key, $value := .Values.rhacs.central.tolerations }}
+    tolerations:
+      - effect: {{ $value.effect }}
+        key: {{ $value.key }}
+        operator: {{ $value.operator }}
+        value: {{ $value.value }}
+    {{- end }}
+    {{- end }}
+  egress:
+    connectivityPolicy: {{ .Values.rhacs.central.egress.connectivityPolicy }}
+  scanner:
+    analyzer:
+      scaling:
+        autoScaling: {{ .Values.rhacs.central.scannerautoscaling.status }}
+        maxReplicas: {{ .Values.rhacs.central.scannerautoscaling.max }}
+        minReplicas: {{ .Values.rhacs.central.scannerautoscaling.min }}
+        replicas: {{ .Values.rhacs.central.scannerautoscaling.replicas }}
+      {{- if .Values.rhacs.scanner.tolerations }}
+      {{- range $key, $value := .Values.rhacs.scanner.tolerations }}
+      tolerations:
+        - effect: {{ $value.effect }}
+          key: {{ $value.key }}
+          operator: {{ $value.operator }}
+          value: {{ $value.value }}
+      {{- end }}
+      {{- end }}
+    {{- if .Values.rhacs.db.tolerations }}
+    {{- range $key, $value := .Values.rhacs.db.tolerations }}
+    db:
+      tolerations:
+        - effect: {{ $value.effect }}
+          key: {{ $value.key }}
+          operator: {{ $value.operator }}
+          value: {{ $value.value }}
+    {{- end }}
+    {{- end }}
+    scannerComponent: Enabled
+{{- end }}

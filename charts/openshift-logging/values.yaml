@@ -1,0 +1,69 @@
+---
+
+elasticsearch: &es false
+lokistack: &loki false
+vector: false
+
+# Install Operator Compliance Operator
+# Deploys Operator --> Subscription and Operatorgroup
+# Syncwave: 0
+helper-operator:
+  operators:
+    elasticsearch-operator:
+      enabled: false
+      syncwave: '0'
+      namespace:
+        name: openshift-operators-redhat
+        create: true
+      subscription:
+        approval: Automatic
+        operatorName: elasticsearch-operator
+        source: redhat-operators
+        sourceNamespace: openshift-marketplace
+      operatorgroup:
+        notownnamespace: true
+        create: true
+
+    loki-operator:
+      enabled: false
+      syncwave: '0'
+      namespace:
+        name: openshift-operators-redhat
+        create: true
+      subscription:
+        channel: stable
+        approval: Automatic
+        operatorName: loki-operator
+        source: redhat-operators
+        sourceNamespace: openshift-marketplace
+      operatorgroup:
+        # notownnamespace: true
+        create: false
+
+    cluster-logging-operator:
+      enabled: true
+      syncwave: '0'
+      namespace:
+        name: openshift-logging
+        create: true
+      subscription:
+        approval: Automatic
+        operatorName: cluster-logging
+        source: redhat-operators
+        sourceNamespace: openshift-marketplace
+      operatorgroup:
+        create: true
+
+helper-status-checker:
+  enabled: true
+
+  # use the value of the currentCSV (packagemanifest) but WITHOUT the version !!
+  operatorName: cluster-logging
+
+  # where operator is installed
+  namespace:
+    name: openshift-logging
+
+  serviceAccount:
+    create: true
+    name: "status-checker-logging"
