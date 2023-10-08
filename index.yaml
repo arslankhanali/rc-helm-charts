@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   blank:
   - apiVersion: v2
-    created: "2023-10-08T17:42:49.912703+11:00"
+    created: "2023-10-05T16:14:49.678487+11:00"
     description: An empty Helm chart
     digest: 526eac5266cce78f81b84a4507b4eb8fa1e884997cc816d373524a4e46eabb56
     keywords:
@@ -21,14 +21,14 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:50.276674+11:00"
+    created: "2023-10-08T17:47:59.489332+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
       version: 1.0.14
     description: Collection of management Operators which are usually installed on
       the management cluster only. I.e. Quay, ACM, Cert-Manager...
-    digest: 8f58c68549ab3179271ad18dec45c6e5c17fa48363c19d796df69a45d97b7578
+    digest: 1908c4ccf00c21b8793454bff3dbcfc86477a16f71462ba465e37f36783c0ff4
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/collection-management-operators
     icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/operatorframework-icon-color.png
     keywords:
@@ -53,13 +53,13 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:50.620965+11:00"
+    created: "2023-10-08T17:47:59.833232+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
       version: 1.0.14
     description: Collection of Operators which can be deployed on Demo Systems.
-    digest: cecaee63d9192ce6245978cd738c5588ac438bf9e88c9839799d1dbd1693c013
+    digest: 071c5495d43b64190c2d5542f312f70afa083d46958d942ba98d66eaac93a04f
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/collection-operators
     icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/operatorframework-icon-color.png
     keywords:
@@ -84,13 +84,13 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:50.979924+11:00"
+    created: "2023-10-08T17:48:00.206543+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
       version: 1.0.14
     description: Collection of optional operators, like CodeReadyWorkspaces.
-    digest: 65f7521bc185d4671f6171dcb107ff2eb43c3e951d6b8c749bad3196bb1ec184
+    digest: 39a61705a6f764461193bf59bd923317bd8242e5e42c85400f7eba6f00a5e96a
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/collection-optional-operators
     icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/operatorframework-icon-color.png
     keywords:
@@ -115,7 +115,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:51.358144+11:00"
+    created: "2023-10-08T17:48:00.586569+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -125,7 +125,7 @@ entries:
       repository: https://charts.stderr.at/
       version: ~3.0.0
     description: Master chart to deploy and configure the Compliance Operator
-    digest: 74577b6c5f78ce934bee247cb582cb3c2c35ddb4d9f94dc81a12ed69618d4b8d
+    digest: 9ff10ff1b40126fecbb23ba49dfca393964bea2ca781e42bff3387afaa20f450
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/compliance-operator-full-stack
     icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/compliance-operator.png
     keywords:
@@ -150,10 +150,10 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:51.754892+11:00"
+    created: "2023-10-08T17:48:01.060381+11:00"
     description: This Chart is responsible to deploy generic clusterconfiguration,
       for example etcd encryption, oauth etc.
-    digest: ff8178c50a55708e2fdb6b9422f34ad391d71fa2b149d3e0b332b50f603bb92a
+    digest: 56f0a6e61ba3a5b731a8e64f81aec39af57036e26a4ba6071d91b9c807b34393
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/generic-cluster-config
     icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/configuration.png
     keywords:
@@ -182,9 +182,9 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:52.093974+11:00"
+    created: "2023-10-08T17:48:01.437867+11:00"
     description: Takes care of creation of Applications and ApplicationSets
-    digest: 09cf41883f0c47e90272ecc16ee4857c14c53a0dc38ea50ad26381b7bbb8e9fa
+    digest: 132329ffb92e1359b83a34d3eac9f8e0337b5b617a58b8bbce4c5b44bbaba71b
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/helper-argocd
     icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/argo-icon-color.png
     keywords:
@@ -210,10 +210,10 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:52.418039+11:00"
+    created: "2023-10-08T17:48:01.834932+11:00"
     description: A helper Chart to reduce code repetition. This Chart should be called
       as a dependency by other charts in order to install Operators
-    digest: 3aa4051ab8a644c0706bb552221dac4e212459a483ef131e13990afe2ac0e462
+    digest: 8cd9db8ff9769459b82f0babe0a966d30109ddc5516156edde11351bee3cf038
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/helper-operator
     icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/helping.png
     keywords:
@@ -238,11 +238,11 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:52.787289+11:00"
+    created: "2023-10-08T17:48:02.205834+11:00"
     description: A helper Chart which creates a job to verify if the deployments of
       an operator are running. To do so it creates a service account with a role to
       read the status of the Deployments
-    digest: da453555f3d3169d55842c3cd3553191041be5ff358f363f99b6c6bd2cb92092
+    digest: 7183835b204b6ae03153dd7f7ae4e2b3e9b28d956d2c533a23d2376ec8aefc87
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/helper-status-checker
     icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/helping.png
     keywords:
@@ -259,7 +259,7 @@ entries:
     version: 3.0.6
   openshift-data-foundation:
   - apiVersion: v2
-    created: "2023-10-08T17:42:53.140695+11:00"
+    created: "2023-10-08T17:48:02.574135+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -269,7 +269,7 @@ entries:
       repository: https://charts.stderr.at/
       version: ~3.0.0
     description: Deploys the OpenShift Data Foundation Operator
-    digest: 9811b62379609a3ac353ec722352e420182ab5e0d36ee27ee06814fa0bce4897
+    digest: 8bed0418c909dc1d0b0d1fb7cd39925f531e89e54564df8d18d1d3d57d60b045
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/openshift-data-foundation
     icon: https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/redhat.svg
     keywords:
@@ -294,9 +294,9 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:53.512213+11:00"
+    created: "2023-10-08T17:48:02.941053+11:00"
     description: Installs and patches the Red Hat Openshift Gitops Operator
-    digest: 569b51ff89c73f6f44a70266dbb0444faae606ad69aaf249b1c0eff9bc3ce493
+    digest: 715364a9beef0cbec4b4b01171ac3a36a428e674989f75642a68e02a5ef0b619
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/openshift-gitops
     icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/argo-icon-color.png
     keywords:
@@ -321,7 +321,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:53.848608+11:00"
+    created: "2023-10-08T17:48:03.288328+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -332,7 +332,7 @@ entries:
       version: ~3.0.0
     description: Deploy and configure OpenShift Logging including Elasticsearch and
       Kibana
-    digest: d9bdaa07c339de3c4551dd8fb377507e5919c59c2d27716f170ea32126592aea
+    digest: 9984495309b8c90223c97c33b76a8acd6ce0ace40244134ffb1d575a3d957f70
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/openshift-logging
     icon: https://raw.githubusercontent.com/tjungbauer/helm-charts/gh-pages/images/logging.svg
     keywords:
@@ -407,7 +407,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:56.031507+11:00"
+    created: "2023-10-08T17:48:05.432954+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -417,7 +417,7 @@ entries:
       repository: https://charts.stderr.at/
       version: ~3.0.0
     description: Master chart to deploy RHACM operator
-    digest: a3ef396f7a334528c647c1569bea791c53b6711913c5c9f105794db80bebc772
+    digest: de2dd306f5a8a54dda18a8f98f970240600e81df426de3b144928b14e05d04ad
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/rhacm-full-stack
     icon: https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/redhat.svg
     keywords:
@@ -442,7 +442,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:56.398255+11:00"
+    created: "2023-10-08T17:48:05.815118+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -453,7 +453,7 @@ entries:
       version: ~3.0.0
     description: Master chart to deploy RHACS operator, initialize it and do some
       configuration using API Calls
-    digest: a3d7c6191f35f6c03b5b1735a85916cb226aee2398e52dc444ba0c368a99810c
+    digest: f126ba8e0d4b3e30e31bd288058d2913f5488be1d18ccc3e62082d6052580b82
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/rhacs-full-stack
     icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/acs.png
     keywords:
@@ -524,7 +524,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:42:58.20861+11:00"
+    created: "2023-10-08T17:48:07.598383+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -534,7 +534,7 @@ entries:
       repository: https://charts.stderr.at/
       version: ~3.0.0
     description: Setup the Container Security Operator
-    digest: aa22a5190e07257017ca5109948e33a68bd5c94ee9e2e70a738f0d7b497b5c66
+    digest: bf5fe3e7dfb0b85ca24be97b68a94c0a6c883ec53198d118dc0e3adbc8e3b6eb
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/setup-container-security-operator
     icon: https://github.com/tjungbauer/helm-charts/raw/gh-pages/images/quay-security-operator.png
     keywords:
@@ -549,4 +549,4 @@ entries:
     urls:
     - https://github.com/arslankhanali/rc-helm-charts/releases/download/setup-container-security-operator-1.0.3/setup-container-security-operator-1.0.3.tgz
     version: 1.0.3
-generated: "2023-10-08T17:42:58.208659+11:00"
+generated: "2023-10-08T17:48:07.598425+11:00"
