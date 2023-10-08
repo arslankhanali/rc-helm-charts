@@ -21,7 +21,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:47:59.489332+11:00"
+    created: "2023-10-08T18:04:13.012364+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -53,7 +53,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:47:59.833232+11:00"
+    created: "2023-10-08T18:04:13.385108+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -84,7 +84,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:48:00.206543+11:00"
+    created: "2023-10-08T18:04:13.776201+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -115,7 +115,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:48:00.586569+11:00"
+    created: "2023-10-08T18:04:14.13615+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -150,7 +150,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:48:01.060381+11:00"
+    created: "2023-10-08T18:04:14.516704+11:00"
     description: This Chart is responsible to deploy generic clusterconfiguration,
       for example etcd encryption, oauth etc.
     digest: 56f0a6e61ba3a5b731a8e64f81aec39af57036e26a4ba6071d91b9c807b34393
@@ -182,7 +182,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:48:01.437867+11:00"
+    created: "2023-10-08T18:04:14.886483+11:00"
     description: Takes care of creation of Applications and ApplicationSets
     digest: 132329ffb92e1359b83a34d3eac9f8e0337b5b617a58b8bbce4c5b44bbaba71b
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/helper-argocd
@@ -210,7 +210,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:48:01.834932+11:00"
+    created: "2023-10-08T18:04:15.257666+11:00"
     description: A helper Chart to reduce code repetition. This Chart should be called
       as a dependency by other charts in order to install Operators
     digest: 8cd9db8ff9769459b82f0babe0a966d30109ddc5516156edde11351bee3cf038
@@ -238,7 +238,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:48:02.205834+11:00"
+    created: "2023-10-08T18:04:15.626987+11:00"
     description: A helper Chart which creates a job to verify if the deployments of
       an operator are running. To do so it creates a service account with a role to
       read the status of the Deployments
@@ -259,7 +259,7 @@ entries:
     version: 3.0.6
   openshift-data-foundation:
   - apiVersion: v2
-    created: "2023-10-08T17:48:02.574135+11:00"
+    created: "2023-10-08T18:04:16.006403+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -294,7 +294,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:48:02.941053+11:00"
+    created: "2023-10-08T18:04:16.358108+11:00"
     description: Installs and patches the Red Hat Openshift Gitops Operator
     digest: 715364a9beef0cbec4b4b01171ac3a36a428e674989f75642a68e02a5ef0b619
     home: https://github.com/tjungbauer/helm-charts/tree/main/charts/openshift-gitops
@@ -321,7 +321,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:48:03.288328+11:00"
+    created: "2023-10-08T18:04:16.761299+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -407,7 +407,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:48:05.432954+11:00"
+    created: "2023-10-08T18:04:19.523024+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -442,7 +442,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:48:05.815118+11:00"
+    created: "2023-10-08T18:04:19.905632+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -524,7 +524,7 @@ entries:
         fingerprint: B677CB52F8358FA091044E375D24D6846DBA8F8A
         url: https://keys.openpgp.org/vks/v1/by-fingerprint/B677CB52F8358FA091044E375D24D6846DBA8F8A
     apiVersion: v2
-    created: "2023-10-08T17:48:07.598383+11:00"
+    created: "2023-10-08T18:04:21.735001+11:00"
     dependencies:
     - name: helper-operator
       repository: https://charts.stderr.at/
@@ -549,4 +549,4 @@ entries:
     urls:
     - https://github.com/arslankhanali/rc-helm-charts/releases/download/setup-container-security-operator-1.0.3/setup-container-security-operator-1.0.3.tgz
     version: 1.0.3
-generated: "2023-10-08T17:48:07.598425+11:00"
+generated: "2023-10-08T18:04:21.735041+11:00"
