@@ -1,6 +1,6 @@
     
 ### Usage
-####
+#### In command line
 
 ```shell
 helm repo add rc-helm-charts https://arslankhanali.github.io/rc-helm-charts/
@@ -16,7 +16,7 @@ helm install s2i-guise rc-helm-charts/s2i --set   appName=infapp3 \
 ```
 
 
-####
+#### In validated Pattern
 ``` yml
     infapp:
       name: infapp
